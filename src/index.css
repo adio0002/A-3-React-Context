@@ -1,0 +1,96 @@
+/* index.css — Global styles & default variables (mirrors theme-noir) */
+
+/* ── Default CSS Variables (Noir / Ivory & Ink) ─────────────────────── */
+:root {
+  --color-bg: #f5f0e8;
+  --color-bg-secondary: #ede7d9;
+  --color-surface: #ffffff;
+  --color-border: #1a1a1a;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #3a3a3a;
+  --color-text-muted: #6a6a6a;
+  --color-accent: #c9a84c;
+  --color-accent-hover: #a8872e;
+  --color-accent-text: #0a0a0a;
+  --color-nav-bg: #0a0a0a;
+  --color-nav-text: #f5f0e8;
+  --color-nav-accent: #c9a84c;
+  --color-error: #c0392b;
+  --shadow-card: 4px 4px 0px #0a0a0a;
+  --shadow-card-hover: 6px 6px 0px #0a0a0a;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+
+  --transition-base: 0.2s ease;
+  --border-radius: 0px;
+
+  --max-width: 1200px;
+}
+
+/* ── Reset ───────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-mono);
+}
+
+/* ── Layout Utility ──────────────────────────────────────────────────── */
+.page-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Focus Styles ────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}

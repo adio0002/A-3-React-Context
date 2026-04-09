@@ -1,0 +1,116 @@
+.header {
+  background-color: var(--color-nav-bg);
+  color: var(--color-nav-text);
+  border-bottom: 2px solid var(--color-nav-accent);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 64px;
+}
+
+/* ── Wordmark ─────────────────────────────────────────── */
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.wordmarkMain {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-nav-accent);
+}
+
+.wordmarkSub {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-nav-text);
+  opacity: 0.7;
+  margin-top: 1px;
+}
+
+/* ── Theme buttons ────────────────────────────────────── */
+.themeGroup {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.themeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.65rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-nav-text);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.themeBtn:hover {
+  border-color: var(--color-nav-accent);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.themeBtnActive {
+  border-color: var(--color-nav-accent);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.themeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Theme dot colours */
+[data-theme-dot="noir"]     { background: #c9a84c; }
+[data-theme-dot="midnight"] { background: #c9a84c; }
+[data-theme-dot="azure"]    { background: #4db8d4; }
+[data-theme-dot="crimson"]  { background: #e8a0a0; }
+
+.themeLabel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .themeLabel {
+    display: inline;
+  }
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 640px) {
+  .inner {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    min-height: auto;
+    gap: 0.75rem;
+  }
+
+  .wordmarkMain {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,36 @@
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  gap: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-nav-text);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.link:hover {
+  background-color: var(--color-nav-accent);
+  color: var(--color-nav-bg);
+  border-color: var(--color-nav-accent);
+}
+
+.active {
+  background-color: var(--color-nav-accent);
+  color: var(--color-nav-bg);
+  border-color: var(--color-nav-accent);
+}
