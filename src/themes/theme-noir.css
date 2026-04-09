@@ -1,0 +1,19 @@
+/* theme-noir.css — Ivory & Ink (light default) */
+[data-theme="noir"] {
+  --color-bg: #f5f0e8;
+  --color-bg-secondary: #ede7d9;
+  --color-surface: #ffffff;
+  --color-border: #1a1a1a;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #3a3a3a;
+  --color-text-muted: #6a6a6a;
+  --color-accent: #c9a84c;
+  --color-accent-hover: #a8872e;
+  --color-accent-text: #0a0a0a;
+  --color-nav-bg: #0a0a0a;
+  --color-nav-text: #f5f0e8;
+  --color-nav-accent: #c9a84c;
+  --color-error: #c0392b;
+  --shadow-card: 4px 4px 0px #0a0a0a;
+  --shadow-card-hover: 6px 6px 0px #0a0a0a;
+}

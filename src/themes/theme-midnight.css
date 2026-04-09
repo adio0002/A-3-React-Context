@@ -1,0 +1,19 @@
+/* theme-midnight.css — Dark & Warm */
+[data-theme="midnight"] {
+  --color-bg: #0e0c0a;
+  --color-bg-secondary: #1a1612;
+  --color-surface: #1e1a14;
+  --color-border: #c9a84c;
+  --color-text-primary: #f0e8d5;
+  --color-text-secondary: #c8b896;
+  --color-text-muted: #7a6a50;
+  --color-accent: #c9a84c;
+  --color-accent-hover: #e8c96a;
+  --color-accent-text: #0e0c0a;
+  --color-nav-bg: #c9a84c;
+  --color-nav-text: #0e0c0a;
+  --color-nav-accent: #0e0c0a;
+  --color-error: #e74c3c;
+  --shadow-card: 4px 4px 0px #c9a84c;
+  --shadow-card-hover: 6px 6px 0px #c9a84c;
+}

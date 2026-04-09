@@ -1,0 +1,19 @@
+/* theme-azure.css — Deep Ocean */
+[data-theme="azure"] {
+  --color-bg: #06111f;
+  --color-bg-secondary: #0c1e32;
+  --color-surface: #102840;
+  --color-border: #4db8d4;
+  --color-text-primary: #e8f4f8;
+  --color-text-secondary: #9ecfdf;
+  --color-text-muted: #4a7a8a;
+  --color-accent: #4db8d4;
+  --color-accent-hover: #7ecfe0;
+  --color-accent-text: #06111f;
+  --color-nav-bg: #4db8d4;
+  --color-nav-text: #06111f;
+  --color-nav-accent: #06111f;
+  --color-error: #e74c3c;
+  --shadow-card: 4px 4px 0px #4db8d4;
+  --shadow-card-hover: 6px 6px 0px #4db8d4;
+}

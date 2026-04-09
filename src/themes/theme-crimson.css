@@ -1,0 +1,19 @@
+/* theme-crimson.css — Bordeaux */
+[data-theme="crimson"] {
+  --color-bg: #1a0808;
+  --color-bg-secondary: #2a1010;
+  --color-surface: #321414;
+  --color-border: #e8a0a0;
+  --color-text-primary: #f8e8e8;
+  --color-text-secondary: #d4a0a0;
+  --color-text-muted: #7a4040;
+  --color-accent: #e8a0a0;
+  --color-accent-hover: #f0c0c0;
+  --color-accent-text: #1a0808;
+  --color-nav-bg: #e8a0a0;
+  --color-nav-text: #1a0808;
+  --color-nav-accent: #1a0808;
+  --color-error: #ff6b6b;
+  --shadow-card: 4px 4px 0px #e8a0a0;
+  --shadow-card-hover: 6px 6px 0px #e8a0a0;
+}
