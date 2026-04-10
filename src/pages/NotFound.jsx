@@ -27,7 +27,6 @@ export default function NotFound() {
         </div>
       </div>
 
-      {/* decorative large text */}
       <p className={styles.bgText} aria-hidden="true">404</p>
     </main>
   );
